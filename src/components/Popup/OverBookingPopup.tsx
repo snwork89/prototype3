@@ -14,6 +14,7 @@ interface OverBookingProps {
     isPopUpOpen:boolean,
     setIsPopUpOpen: Dispatch<SetStateAction<boolean>>,
     selectedFlightOverBooking: overBooking[] | [],
+    setSelectedFlightOverBooking: Dispatch<SetStateAction<overBooking[] | []>>,
 
 }
 
@@ -32,7 +33,10 @@ export default function OverBookingPopup (props: OverBookingProps) {
     const renderTabContent = ()=>{
         if(currentTab==0){
            return (
-               <OverBookingTab selectedFlightOverBooking={props.selectedFlightOverBooking}/>
+               <OverBookingTab selectedFlightOverBooking={props.selectedFlightOverBooking}
+               setSelectedFlightOverBooking={props.setSelectedFlightOverBooking}
+               
+               />
            )
         }
     }

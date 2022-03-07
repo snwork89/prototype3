@@ -98,6 +98,7 @@ const FlightTable = () => {
         isPopUpOpen={isPopUpOpen}
         setIsPopUpOpen={setIsPopUpOpen}
         selectedFlightOverBooking={selectedFlightOverBooking}
+        setSelectedFlightOverBooking={setSelectedFlightOverBooking}
       />
     </>
   );
